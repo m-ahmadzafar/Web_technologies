@@ -1,0 +1,56 @@
+.header {
+    display: flex;
+}
+
+.bookmark{
+    background-color:rgb(62, 113, 231) ;
+    color: rgb(62, 113, 231);
+    border: solid;
+    margin-right: 15px;
+    margin-left: 50px ;
+    margin-bottom: 15px;
+   
+
+}
+
+.OEE{
+    display: flex;
+    flex-wrap: wrap;
+   
+    /* background-color: pink; */
+   
+}
+
+.objective{
+    background-color: rgb(62, 113, 231);
+    width: 13%;
+    margin-right: 15px;
+    border: solid;
+    padding: 50px;
+    text-overflow: hidden;  
+    margin-bottom: 600px;  
+}
+
+.experience{
+}
+
+.education table {
+    border-style: solid;
+    border: black ;
+    border-width: 1px;
+
+}
+
+.red_line{
+    background-color: red;
+    height: 1px;
+    width: 100%;
+}
+
+
+
+
+
+
+ 
+  
