@@ -1,0 +1,265 @@
+.navbar{
+    
+    color: white;
+}
+
+body{
+    background-color: white;
+    font-family: "Poppins";
+    width: 100%;
+    height: 100%;
+    --color: #E1E1E1;
+    background-color: #F3F3F3;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+    
+}
+
+.landingBlock{
+    min-height: 600px;
+    background-color: skyblue;
+    font-size: 400%;
+ 
+    padding-top: 25%;
+    justify-content: center;
+    font-weight: 1000;
+    line-height: 90%;
+    text-align: center;
+    background: linear-gradient(rgba(250, 56, 56, 0.929), rgb(226, 248, 34));
+}
+
+
+.card {
+    position: relative;
+    width: 320px;
+    height: 420px;
+    background: rgb(21, 255, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 2%;
+  }
+  
+  .card::before,
+  .card::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(28, 236, 255);
+    transition: all 0.5s;
+  }
+  
+  .card::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+  }
+  
+  .card::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+  }
+  
+  .card:hover::before,
+  .card:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+  }
+  
+  #Responsive:hover:after {
+    content: "Get a website that works the same on desktops, mobiles and tablets.";
+    font-size: large;
+    padding: 5%;
+  }
+  #Fun:hover:after {
+    content: "We bring your brand to life with designs, palettes and imagery that screams YOU.";
+    font-size: large;
+    padding: 5%;
+}
+  #Effective:hover:after {
+    content: "Our designs are research-based which means more clicks, more sales and more $ for you.";
+    font-size: large;
+    padding: 5%;
+}
+
+  .cardFlex{
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .WhyUs{
+    text-align: center;
+    margin-top: 5%; 
+  }
+
+
+
+
+  .Servicescard {
+    width: 90%;
+    height: 554px;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+  }
+  
+  .Servicescard__content {
+    color: white;
+    justify-content: center;
+    padding: 3%;
+    background: rgb(5, 6, 45);
+    border-radius: 17px;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+  .form-box {
+    max-width: 500px;
+    background: #f1f7fe;
+    overflow: hidden;
+    border-radius: 16px;
+    color: #010101;
+    position: relative;
+    margin: 5% auto; 
+    padding: 20px; 
+}
+
+
+
+  
+  .form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px 24px;
+    gap: 16px;
+    text-align: center;
+  }
+  
+  /*Form text*/
+  .title {
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /*Inputs box*/
+  .form-container {
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 1rem 0 .5rem;
+    width: 100%;
+  }
+  
+  .input {
+    background: none;
+    border: 0;
+    outline: 0;
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    font-size: .9rem;
+    padding: 8px 15px;
+  }
+  
+  .form-section {
+    padding: 16px;
+    font-size: .85rem;
+    background-color: #e0ecfb;
+    box-shadow: rgb(0 0 0 / 8%) 0 -1px;
+  }
+  
+  .form-section a {
+    font-weight: bold;
+    color: #0066ff;
+    transition: color .3s ease;
+  }
+  
+  .form-section a:hover {
+    color: #005ce6;
+    text-decoration: underline;
+  }
+  
+  /*Button*/
+  .form button {
+    background-color: #0066ff;
+    color: #fff;
+    border: 0;
+    border-radius: 24px;
+    padding: 10px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color .3s ease;
+  }
+  
+  .form button:hover {
+    background-color: #005ce6;
+  }
+
+
+
+#sgs_list {
+    text-align: left;
+}
+
+.AboutCard {
+    width: 90%;
+    height: 100%;
+    background-image: linear-gradient(163deg, #bb00ff 0%, #ff00c3 100%);
+    border-radius: 20px;
+    margin-bottom: 5%;
+    display: flex;
+    overflow: hidden;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-style: solid;
+    border-width: 7px;
+
+
+   }
+
+.find_us{
+    padding: 5%;
+}
+
+.embedDiv{
+    padding: 5%;
+    
+}
+
+.footer{
+    text-align: center;
+    background-color: rgb(185, 185, 185);
+    min-height: 100px;
+    padding-top: 40px;
+    
+}
+  
