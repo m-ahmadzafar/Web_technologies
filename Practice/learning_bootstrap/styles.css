@@ -1,0 +1,21 @@
+.box{
+    background-color: aquamarine;
+
+}
+
+#row2{
+    background-color: aqua;
+    margin: 0%;
+    padding: 0%;
+}
+
+.swag {
+    height: 100%;
+    display: flex;
+    background-color: rgb(143, 249, 101);
+}
+
+.divText{
+    background-color: brown;
+    text-align: center;
+}
