@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story CRUD Operations</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="mb-4">Story CRUD Operations</h2>
+    <h3>Student Registration System</h3>
+    <p>this is a mock ui which may be used by students to submit their names and roll nos for some event.</p>
+
+    <!-- Create Form -->
+    <form id="createForm">
+        <div class="form-group">
+            <label for="createTitle">Student Name</label>
+            <input type="text" class="form-control" id="createTitle" required value="Student Name">
+        </div>
+        <div class="form-group">
+            <label for="createContent">Roll No</label>
+            <input type="text" class="form-control" id="createContent"  required value="Student Roll No"></input>
+        
+        </div>
+        <div class="form-group">
+            <label for="sections">Student Section</label>
+            <div class="sections"></div>
+            <label>
+                <input type="radio" name="section" value="A"> Section A
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="section" value="B"> Section B
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="section" value="C"> Section C
+            </label>
+        </div>
+        
+        <button id="createBtn" type="submit" class="btn btn-primary">Create</button>
+        <button id="clearBtn" type="submit" class="btn btn-primary" style="display: none;">Clear</button>
+    </form>
+
+    <hr>
+
+    <!-- Display Stories -->
+    <div id="storiesList"></div>
+
+</div>
+
+<!-- Include jQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
