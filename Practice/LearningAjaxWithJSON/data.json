@@ -1,0 +1,21 @@
+[
+    {
+
+        "name" : "Ahmad",
+        "rollNo": "001",
+        "section": "A"
+        
+    },
+    {
+        "name" : "Ali",
+        "rollNo": "002",
+        "section": "B"
+    },
+    {
+        
+        "name" : "Atif",
+        "rollNo": "003",
+        "section": "Ch"
+
+    }
+]
