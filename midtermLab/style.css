@@ -1,0 +1,111 @@
+.logoDiv{
+    background-color: black;
+}
+
+
+
+.nicheDiv{
+    display: flex;
+    background-color: navy;
+    color: white;
+    max-height: 70px;
+}
+
+.btnDiv{
+    margin: 5%;
+    margin-left: 5%;
+    height: 30px;
+}
+
+#nicheUL{
+    
+    list-style-type: none; 
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ 
+}
+
+#nicheUL2 {
+    color: navy;
+    list-style-type: none; 
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+#nicheUL li{
+    padding: 3%;
+}
+
+#nicheUL2 li{
+    padding: 2%;
+}
+
+
+.barBTN{
+    max-height: 30px;
+    min-height: 30px;
+
+    margin: 2%;
+    float: right;
+}
+
+.content{
+    display: flex;
+}
+.mainArticle{
+    margin-left: 2%;
+    display: flex;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+#mainImg{
+    width: 520px;
+    height: 300px;
+}
+
+.cardFlex{
+    display: flex;
+    justify-self: unset;
+    overflow: hidden;
+    max-width: 1000px;
+}
+
+.card{
+    padding: 2%;
+    border: solid;
+    border-color: aliceblue;
+    border-width: 1px;
+    min-width: 300px;
+    min-height: 200px;
+    max-height: 400px;
+}
+
+.card img{
+    border-radius: 5%;
+}
+
+
+.side-box{
+    margin: 2%;
+    margin-top: 0%;
+}
+
+.article-list{
+    list-style-type: none; 
+    padding: 0%;
+
+}
+
+.side-miniBox{
+    display: flex;
+}
+
+.content2{
+    display: flex;
+
+}
