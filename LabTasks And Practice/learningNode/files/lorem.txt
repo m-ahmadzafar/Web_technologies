@@ -1,0 +1,1 @@
+Hi. This is just a text file that will used for file read and write ops in node.
