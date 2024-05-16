@@ -1,6 +1,20 @@
 .navbar{
-    
-    color: white;
+}
+
+.navbar-brand {
+  margin: 0; /* Ensure no margin */
+  padding: 0; /* Ensure no padding */
+}
+
+.navbar h2 {
+  margin: 0; /* Ensure no margin */
+  padding: 0; /* Ensure no padding */
+}
+
+
+.nav-item{
+  margin-top: 3%;
+  font-size: large;
 }
 
 body{
@@ -16,9 +30,14 @@ body{
     
 }
 
+.landing{
+  margin: 0; /* Ensure no margin */
+  padding: 0;
+}
+
 .landingBlock{
+
     min-height: 600px;
-    background-color: skyblue;
     font-size: 400%;
  
     padding-top: 25%;
@@ -30,77 +49,8 @@ body{
 }
 
 
-.card {
-    position: relative;
-    width: 320px;
-    height: 420px;
-    background: rgb(21, 255, 247);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    font-weight: bold;
-    border-radius: 15px;
-    cursor: pointer;
-    margin: 2%;
-  }
-  
-  .card::before,
-  .card::after {
-    position: absolute;
-    content: "";
-    width: 20%;
-    height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    font-weight: bold;
-    background-color: rgb(28, 236, 255);
-    transition: all 0.5s;
-  }
-  
-  .card::before {
-    top: 0;
-    right: 0;
-    border-radius: 0 15px 0 100%;
-  }
-  
-  .card::after {
-    bottom: 0;
-    left: 0;
-    border-radius: 0 100%  0 15px;
-  }
-  
-  .card:hover::before,
-  .card:hover:after {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    transition: all 0.5s;
-  }
-  
-  #Responsive:hover:after {
-    content: "Get a website that works the same on desktops, mobiles and tablets.";
-    font-size: large;
-    padding: 5%;
-  }
-  #Fun:hover:after {
-    content: "We bring your brand to life with designs, palettes and imagery that screams YOU.";
-    font-size: large;
-    padding: 5%;
-}
-  #Effective:hover:after {
-    content: "Our designs are research-based which means more clicks, more sales and more $ for you.";
-    font-size: large;
-    padding: 5%;
-}
 
-  .cardFlex{
-    display: flex;
-    justify-content: center;
 
-  }
 
   .WhyUs{
     text-align: center;
@@ -233,8 +183,6 @@ body{
 .AboutCard {
     width: 90%;
     height: 100%;
-    background-image: linear-gradient(163deg, #bb00ff 0%, #ff00c3 100%);
-    border-radius: 20px;
     margin-bottom: 5%;
     display: flex;
     overflow: hidden;

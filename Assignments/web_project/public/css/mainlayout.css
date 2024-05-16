@@ -1,0 +1,15 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.footer{
+    padding: 3%;
+    font-size: large;
+    text-align: center;
+    background-color: rgb(157, 157, 157);
+}
+
+.footer a {
+    color: black;
+}

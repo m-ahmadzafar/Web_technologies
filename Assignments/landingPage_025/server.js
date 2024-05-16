@@ -3,6 +3,8 @@ const mongoose = require("mongoose");
 const expressLayouts = require('express-ejs-layouts');
 const app = express();
 
+const PORT = process.env.PORT || 3000
+
 // Serve static files from the 'public' directory
 app.use(express.static('public'));
 
@@ -48,6 +50,6 @@ app.get('/services', (req, res) => {
 
 
 // Start the server
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
+app.listen(PORT, () => {
+  console.log('Server is running on port ' + PORT);
 });
