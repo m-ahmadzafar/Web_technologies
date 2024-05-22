@@ -1,0 +1,42 @@
+<div class="events-container">
+  <h1>Events</h1>
+  <table class="events-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Location</th>
+        <th>Date</th>
+        <th>Details</th>
+        <th>Users Involved</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% events.forEach(event => { %>
+        <tr>
+          <td><%= event.name %></td>
+          <td><%= event.type %></td>
+          <td><%= event.location %></td>
+          <td><%= event.date.toDateString() %></td>
+          <td><%= event.details %></td>
+          <td>
+            <ul class="event-users">
+              <% event.users.forEach(u => { %>
+                <li><%= u.user.name %> - <%= u.status %></li>
+              <% }) %>
+            </ul>
+          </td>
+          <td>
+            <a href="/events/<%= event._id %>"><button>Edit Users List</button></a>
+            <a href="/events/edit/<%= event._id %>"><button>Edit Event</button></a>
+            <form action="/events/delete/<%= event._id %>" method="POST" style="display:inline;">
+              <button type="submit">Delete Event</button>
+            </form>
+          </td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+  <a href="/events/create"><button class="create-event-button">Create New Event</button></a>
+</div>

@@ -1,0 +1,46 @@
+<div class="event-details">
+
+<h1><%= event.name %></h1>
+<div class="fetched-details">
+<p><b>Type:</b> <%= event.type %></p>
+<p><b>Details:</b> <%= event.details %></p>
+<p><b>Location:</b> <%= event.location %></p>
+<p><b>Date:</b> <%= event.date.toDateString() %></p>
+</div>
+<h4><b>Users Involved</b></h4>
+<ul>
+    <% event.users.forEach(userObj => { %>
+        <li>
+            User: <%= userObj.user.name %> - Status: <%= userObj.status %>
+            <form action="/events/<%= event._id %>/remove-user/<%= userObj.user._id %>" method="POST" style="display:inline;">
+                <button type="submit">Remove</button>
+            </form>
+        </li>
+    <% }) %>
+</ul>
+
+<h4><b>Add User</b></h4>
+<form action="/events/<%= event._id %>/add-user" method="POST">
+    <div class="flex">
+    <div>
+        <label for="userId">User:</label>
+        <select id="userId" name="userId" required>
+            <% users.forEach(user => { %>
+                <option value="<%= user._id %>"><%= user.name %></option>
+            <% }) %>
+        </select>
+    </div>
+    <div>
+        <label for="status">Status:</label>
+        <select id="status" name="status" required>
+            <option value="invited">Invited</option>
+            <option value="accepted">Accepted</option>
+            <option value="declined">Declined</option>
+        </select>
+    </div>
+</div>
+    <button type="submit">Add User</button>
+</form>
+<a href="/events"><button>Go Back</button></a>
+
+</div>

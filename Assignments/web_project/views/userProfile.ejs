@@ -1,0 +1,25 @@
+<div class="profile">
+
+<h1>User Profile</h1>
+<form id="profileForm">
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" value="<%= user.name %>" readonly>
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" value="<%= user.email %>" readonly>
+  </div>
+  <div class="form-group">
+    <label for="region">Region:</label>
+    <input type="text" id="region" name="region" value="<%= user.region %>" readonly>
+  </div>
+  <div class="form-group">
+    <label for="company">Company:</label>
+    <input type="text" id="company" name="company" value="<%= user.company %>" readonly>
+  </div>
+  <button type="button" id="editButton" class="btn">Edit</button>
+  <button type="submit" id="saveButton" class="btn " style="display: none;">Save</button>
+</form>
+
+</div>
