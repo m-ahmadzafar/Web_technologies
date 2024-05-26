@@ -5,6 +5,8 @@ import Hook from './hooks';
 import List from "./list";
 import Home from './home';
 import BlogFetcher from './blogFetcher';
+import State from './State';
+import Props from './props';
 
 
 function App() {
@@ -20,8 +22,10 @@ function App() {
       <Content/>
       <Func/>
       <Hook/>
-     <List/>
+      <State/>
+      <List/>
      <Home/>
+     <Props/>
     </div>
   );
 }

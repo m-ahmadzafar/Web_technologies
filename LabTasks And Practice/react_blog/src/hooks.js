@@ -5,9 +5,16 @@ const Hook = () => {
     const [age, setAge] = useState("27")
 
     const handleChange = () => {
+    if(name == "Ali")
+    {    
     setName("Ahmad");
     setAge(20)
     }
+    else{
+    setName("Ali");
+    setAge(27)
+    }
+  }
     
     
     return (

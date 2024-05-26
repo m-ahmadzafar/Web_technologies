@@ -15,6 +15,7 @@ const Func = () => {
         
         <div className="func">
         <h2>This is from function.js</h2>
+        <h3>This uses event</h3>
         <p>Now we learn how to use methods in React. P.s Check console for output</p>
         <button onClick={eventTargetPrinter}>E Printer</button> 
         <button onClick={()=> paramPasser("Ahmad")}>Param Printer</button> 
