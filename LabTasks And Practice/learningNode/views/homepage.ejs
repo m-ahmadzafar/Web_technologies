@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+</head>
+<body>
+    <h1>Hello from EJS</h1>
+    <form action="/submit" method="POST">
+    <input type="text"  name="input" value="<%= input %>">
+    <button type="submit">Submit</button>
+    </form>
+
+    <p><%= output %></p>
+    <h2>Search History</h2>
+    <ul>
+        <% searchHistory.forEach(function(query) { %>
+            <li><%= query %></li>
+        <% }) %>
+    </ul>
+</body>
+</html>
