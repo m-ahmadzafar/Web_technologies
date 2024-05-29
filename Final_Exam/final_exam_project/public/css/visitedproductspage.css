@@ -1,8 +1,9 @@
 /* visitedproductspage.css */
-.products {
+.visited-products {
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
+    background-color: white;
 }
 
 .products-table {
