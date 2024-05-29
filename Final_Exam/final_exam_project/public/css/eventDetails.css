@@ -1,0 +1,113 @@
+/* Event Details container */
+.event-details {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    border: 2px solid var(--border-color); /* Using variable for border color */
+    border-radius: 10px;
+    margin-bottom: 2%;
+    background-color: var(--bg-color); /* Using variable for background color */
+}
+
+.flex, .fetched-details{
+    display: flex;
+    gap: 20px;
+}
+.flex2{
+    display: flex;
+    justify-content: space-between;
+}
+/* Event heading */
+.event-details h1 {
+    text-align: center !important;
+    color: var(--heading-color); /* Using variable for heading color */
+    margin-bottom: 10px;
+}
+
+/* Paragraphs for event details */
+.event-details p {
+    text-align: left;
+    color: var(--text-color); /* Using variable for text color */
+    margin-bottom: 10px;
+}
+
+/* User list */
+.user-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.user-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--list-bg-color); /* Using variable for list background color */
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+/* Form group */
+.event-details .form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* Form labels */
+.event-details label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-color); /* Using variable for text color */
+}
+
+/* Form inputs */
+.event-details input[type="text"],
+.event-details input[type="date"],
+.event-details textarea,
+.event-details select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--border-color); /* Using variable for border color */
+    border-radius: 5px;
+    background-color: white;
+    color: var(--text-color); /* Using variable for text color */
+}
+
+/* Form buttons */
+.event-details button {
+    background-color: var(--button-bg-color); /* Using variable for button background */
+    color: var(--button-text-color); /* Using variable for button text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.event-details button:hover {
+    background-color: var(--button-hover-bg-color); /* Using variable for button hover background */
+    color: var(--button-hover-text-color); /* Using variable for button hover text color */
+}
+
+.btn-remove {
+    background-color: var(--remove-button-bg-color); /* Using variable for remove button background */
+    color: var(--remove-button-text-color); /* Using variable for remove button text color */
+}
+
+.btn-remove:hover {
+    background-color: var(--remove-button-hover-bg-color); /* Using variable for remove button hover background */
+    color: var(--remove-button-hover-text-color); /* Using variable for remove button hover text color */
+}
+
+.btn-secondary {
+    background-color: var(--secondary-button-bg-color); /* Using variable for secondary button background */
+    color: var(--secondary-button-text-color); /* Using variable for secondary button text color */
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-button-hover-bg-color); /* Using variable for secondary button hover background */
+    color: var(--secondary-button-hover-text-color); /* Using variable for secondary button hover text color */
+}

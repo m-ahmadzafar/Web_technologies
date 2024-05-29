@@ -1,0 +1,43 @@
+:root {
+    /* Background */
+    --bg-color: #FFE5E5; /* Peach */
+  
+    /* Text */
+    /* --text-color: #5D12D2; Dark Purple */
+    --text-color: #000000;
+    
+    /* Headings */
+    --heading-color: #B931FC; /* Purple */
+  
+    /* Buttons */
+    --button-bg-color: #FF6AC2; /* Pink */
+    --button-text-color: #FFFFFF; /* White */
+    --button-hover-bg-color: #B931FC; /* Purple */
+    --button-hover-text-color: #FFFFFF; /* White */
+    --button-hover-bg-color: #aa00ff;
+    
+    
+    /* Borders */
+    --border-color: #B931FC; /* Purple */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color); /* Using variable for background color */
+    color: var(--text-color); /* Using variable for text color */
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 3%;
+    font-size: large;
+    text-align: center;
+    background-color: peachpuff; /* Keeping the original background color */
+}
+
+.footer a {
+    color: var(--text-color); /* Using variable for link color */
+}

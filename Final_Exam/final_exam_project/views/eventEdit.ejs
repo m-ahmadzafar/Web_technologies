@@ -1,0 +1,43 @@
+<div class="edit-event">
+<h1>Edit Event</h1>
+  <form action="/events/edit/<%= event._id %>" method="POST">
+    <div class="flex">
+    <div class="form-group">
+      <label for="name">Event Name:</label>
+      <input type="text" id="name" name="name" value="<%= event.name %>" required>
+    </div>
+    <div class="form-group">
+      <label for="type">Event Type:</label>
+      <input type="text" id="type" name="type" value="<%= event.type %>" required>
+    </div>
+   
+    <div class="form-group">
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" value="<%= event.location %>" required>
+    </div>
+    <div class="form-group">
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" value="<%= event.date.toISOString().split('T')[0] %>" required>
+    </div>
+  </div>
+    <div class="form-group">
+      <label for="details">Details:</label>
+      <textarea id="details" name="details"><%= event.details %></textarea>
+    </div>
+     <div>
+        <label for="users">Select Users:</label>
+        <select id="users" name="users" multiple>
+            <% event.users.forEach(userObj => { %>
+                <option value="<%= userObj.user._id %>" selected><%= userObj.user.name %></option>
+            <% }) %>
+            <% users.forEach(user => { %>
+                <% const isSelected = event.users.some(userObj => userObj.user.toString() === user._id.toString()); %>
+                <% if (!isSelected) { %>
+                    <option value="<%= user._id %>"><%= user.name %></option>
+                <% } %>
+            <% }) %>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Update Event</button>
+  </form>
+</div>

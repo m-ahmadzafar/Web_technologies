@@ -1,0 +1,15 @@
+<div class="events">
+    <h1>Events</h1>
+    <a href="/create">Create New Event</a>
+    <ul>
+      <% events.forEach(event => { %>
+        <li>
+          <a href="/events/<%= event._id %>"><%= event.name %></a>
+          <form action="/events/<%= event._id %>" method="POST" style="display:inline;">
+            <input type="hidden" name="_method" value="DELETE">
+            <button type="submit">Delete</button>
+          </form>
+        </li>
+      <% }) %>
+    </ul>
+</div>

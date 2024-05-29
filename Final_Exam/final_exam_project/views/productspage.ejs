@@ -1,0 +1,30 @@
+
+
+<div class="products">
+    <table class="products-table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>price</th>
+          <th>Category</th>
+          <th>isFeatured</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% products.forEach(product => { %>
+          <tr>
+            <td><%= product.id %></td>
+            <td><%= product.name %></td>
+            <td><%= product.description %></td>
+            <td><%= product.price %></td>
+            <td><%= product.category %></td>
+            <td><%= product.isFeatured %></td>
+            <td><a href="/products/<%= product.id%>"><button>View Product</button></a></td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>

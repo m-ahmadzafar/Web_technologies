@@ -1,0 +1,82 @@
+<!-- <% var css = '<link rel="stylesheet" href="/css/index.css">'; %>
+<% var scripts = '<script src="/js/index.js"></script>'; %> -->
+
+<div class="products">
+  <h1>Featured Products</h1>
+  <table class="products-table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>price</th>
+        <th>Category</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% products.forEach(product => { %>
+        <% if (product.isFeatured) { %>
+          <tr>
+            <td><%= product.id %></td>
+            <td><%= product.name %></td>
+            <td><%= product.description %></td>
+            <td><%= product.price %></td>
+            <td><%= product.category %></td>
+          <td><a href="/products/<%= product.id%>"><button>View Product</button></a></td>
+          </tr>
+        <% } %>
+      <% }) %>
+    </tbody>
+  </table>
+
+  <a href="/products"><button>All Products </button></a>
+  <a href="/visited-products"><button>Visited Products </button></a>
+</div>
+
+<div class="heroblock">
+    <h1>EVENTECH</h1>
+    <p>The only Event Management System you'll need for collaboration-based event planning.</p>
+    <a href="/signup"><button id="get-started">->Get Started </button></a>
+</div>
+
+
+
+<div class="why-us">
+    <h2>Why Us?</h2>
+    <div class="why-us-cards">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">User-Friendly Interface</h5>
+        <p class="card-text">Our event management system features a user-friendly interface that makes it easy to create and manage events efficiently.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Comprehensive Features</h5>
+        <p class="card-text">With a comprehensive set of features, including event tracking, notifications, and analytics, we offer everything you need to run successful events.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Reliable Support</h5>
+        <p class="card-text">Our dedicated support team is always here to help you with any issues or questions, ensuring your events run smoothly.</p>
+      </div>
+    </div>
+</div>
+  </div>
+
+  <div class="about">
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+  
+    
+
+  <div class="contact">
+    <h2>Contact Us</h2>
+    <p>For inquiries or assistance, please contact us:</p>
+    <ul>
+        <li>Email: info@example.com</li>
+        <li>Phone: +1234567890</li>
+    </ul>
+</div>
